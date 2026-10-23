@@ -104,13 +104,13 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5.1.1
-        version: 5.1.1(supports-color@8.1.1)(vite@7.3.5(@types/node@24.10.1)(sass-embedded@1.105.2)(sass@1.105.2)(terser@5.44.1))
+        version: 5.1.1(supports-color@8.1.1)(vite@7.3.7(@types/node@24.10.1)(sass-embedded@1.105.2)(sass@1.105.2)(terser@5.44.1))
       sass-embedded:
         specifier: ^1.105.2
         version: 1.105.2
       vite:
-        specifier: ^7.3.5
-        version: 7.3.5(@types/node@24.10.1)(sass-embedded@1.105.2)(sass@1.105.2)(terser@5.44.1)
+        specifier: ^7.3.7
+        version: 7.3.7(@types/node@24.10.1)(sass-embedded@1.105.2)(sass@1.105.2)(terser@5.44.1)
 
 packages:
 
@@ -2460,8 +2460,8 @@ packages:
   varint@6.0.0:
     resolution: {integrity: sha512-cXEIW6cfr15lFv563k4GuVuW/fiwjknytD37jIOLSdSWuOI6WnO/oKwmP2FQTU2l01LP8/M5TSAJpzUaGe3uWg==}
 
-  vite@7.3.5:
-    resolution: {integrity: sha512-KuOaNhcnGFN2zIPGA7wRmzF+lJA1sea7rHq17aiJ++9lzY1WWG6Jpwqwe1KNbRVPIqHmr8GLYx7jbrQcN/7/ww==}
+  vite@7.3.7:
+    resolution: {integrity: sha512-AHEzTORMbi7/7aXp7w7KZ5+DCUdSeLsJz0grY8xHpc9DHdYb0vQu6DqJfm2tOw3gDExNgPgnJTXxM6syYFHaCA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -3261,7 +3261,7 @@ snapshots:
       react: 19.3.1
       react-dom: 19.3.1(react@19.3.1)
 
-  '@vitejs/plugin-react@5.1.1(supports-color@8.1.1)(vite@7.3.5(@types/node@24.10.1)(sass-embedded@1.105.2)(sass@1.105.2)(terser@5.44.1))':
+  '@vitejs/plugin-react@5.1.1(supports-color@8.1.1)(vite@7.3.7(@types/node@24.10.1)(sass-embedded@1.105.2)(sass@1.105.2)(terser@5.44.1))':
     dependencies:
       '@babel/core': 7.28.5(supports-color@8.1.1)
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.28.5(supports-color@8.1.1))
@@ -3269,7 +3269,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-beta.47
       '@types/babel__core': 7.20.5
       react-refresh: 0.18.0
-      vite: 7.3.5(@types/node@24.10.1)(sass-embedded@1.105.2)(sass@1.105.2)(terser@5.44.1)
+      vite: 7.3.7(@types/node@24.10.1)(sass-embedded@1.105.2)(sass@1.105.2)(terser@5.44.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -4890,7 +4890,7 @@ snapshots:
 
   varint@6.0.0: {}
 
-  vite@7.3.5(@types/node@24.10.1)(sass-embedded@1.105.2)(sass@1.105.2)(terser@5.44.1):
+  vite@7.3.7(@types/node@24.10.1)(sass-embedded@1.105.2)(sass@1.105.2)(terser@5.44.1):
     dependencies:
       esbuild: 0.27.7
       fdir: 6.5.0(picomatch@4.0.4)
