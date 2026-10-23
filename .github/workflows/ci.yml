@@ -152,7 +152,7 @@ jobs:
     steps:
       - name: Fetch Dependabot metadata
         id: metadata
-        uses: dependabot/fetch-metadata@v2
+        uses: dependabot/fetch-metadata@v3
 
       # Politica atual: patch, minor e major sao mergeados apos install/build.
       # Testes sao advisory por padrao; use ENFORCE_TESTS=true no repo para exigi-los.
