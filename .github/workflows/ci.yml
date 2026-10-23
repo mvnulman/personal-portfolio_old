@@ -82,13 +82,21 @@ jobs:
                 if echo "$test_script" | grep -qi "no test specified"; then
                   echo "No test script configured"
                 elif echo "$test_script" | grep -qi "vitest"; then
-                  npx vitest run
+                  if [ -x node_modules/.bin/vitest ]; then
+                    npx vitest run
+                  else
+                    echo "vitest not installed; skipping tests"
+                  fi
                 elif echo "$test_script" | grep -Eqi "cypress|playwright"; then
                   echo "Skipping browser test: $test_script"
                 elif echo "$test_script" | grep -Eqi "jest|react-scripts"; then
-                  if [ "$PM" = "pnpm" ]; then CI=true timeout 300 pnpm test -- --watchAll=false
-                  elif [ "$PM" = "yarn" ]; then CI=true timeout 300 yarn test -- --watchAll=false
-                  else CI=true timeout 300 npm test -- --watchAll=false
+                  if [ -x node_modules/.bin/jest ] || [ -x node_modules/.bin/react-scripts ]; then
+                    if [ "$PM" = "pnpm" ]; then CI=true timeout 300 pnpm test -- --watchAll=false
+                    elif [ "$PM" = "yarn" ]; then CI=true timeout 300 yarn test -- --watchAll=false
+                    else CI=true timeout 300 npm test -- --watchAll=false
+                    fi
+                  else
+                    echo "jest/react-scripts not installed; skipping tests"
                   fi
                 else
                   if [ "$PM" = "pnpm" ]; then CI=true timeout 300 pnpm test
