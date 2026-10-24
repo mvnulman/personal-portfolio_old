@@ -59,7 +59,7 @@
     ]
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^5.1.1",
+    "@vitejs/plugin-react": "^5.2.0",
     "sass-embedded": "^1.105.2",
     "vite": "^7.3.7"
   }
