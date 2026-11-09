@@ -54,8 +54,8 @@ importers:
         specifier: ^7.91.0
         version: 7.91.0(react@19.3.1)
       react-lottie:
-        specifier: ^1.2.10
-        version: 1.2.10(react@19.3.1)
+        specifier: ^2.3.1
+        version: 2.3.1(react@19.3.1)
       react-map-gl:
         specifier: ^8.1.3
         version: 8.1.3(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
@@ -1152,10 +1152,10 @@ packages:
   react-lifecycles-compat@3.0.4:
     resolution: {integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==}
 
-  react-lottie@1.2.10:
-    resolution: {integrity: sha512-x0eWX3Z6zSx1XM5QSjnLupc6D22LlMCB0PH06O/N/epR2hsLaj1Vxd9RtMnbbEHjJ/qlsgHJ6bpN3vnZI92hjw==}
+  react-lottie@2.3.1:
+    resolution: {integrity: sha512-j1/AUsWHStcZwAuvYYNjP5T9Cm713jZ8rC2nKC/6G5Y+JjQaTRggLOAK3wYXdazWD/uF9/jo8IKiD76lPDfGUg==}
     peerDependencies:
-      react: '>=15.0.0'
+      react: '>=16.8.0'
 
   react-map-gl@8.1.3:
     resolution: {integrity: sha512-i8ExMBodZ5waBlnnXhPHfubf1mSQrzVBKsp9LUSWIAQjOuUhI4Dv962rzE2QfI7n5oywunldQlxcW1Mjy8rp7w==}
@@ -2516,9 +2516,8 @@ snapshots:
 
   react-lifecycles-compat@3.0.4: {}
 
-  react-lottie@1.2.10(react@19.3.1):
+  react-lottie@2.3.1(react@19.3.1):
     dependencies:
-      babel-runtime: 6.26.0
       lottie-web: 5.13.0
       prop-types: 15.8.1
       react: 19.3.1
