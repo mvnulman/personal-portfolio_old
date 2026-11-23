@@ -10,7 +10,7 @@
     "ansi-regex": "^6.6.0",
     "aos": "^2.3.4",
     "browserslist": "^4.29.6",
-    "glob-parent": "^6.0.2",
+    "glob-parent": "^7.0.0",
     "immer": "^11.2.10",
     "json-schema": "^0.4.0",
     "node-forge": "^1.4.3",
